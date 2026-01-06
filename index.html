@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DexDeveloper | Help Businesses Scale</title>
+    <meta name="title" content="DexDeveloper | Helps Business Scale">
+    <meta name="description"
+        content="DexDeveloper builds fast, responsive websites with modern design and SEO to help businesses grow traffic, rankings, and online visibility.">
+    <meta name="keywords"
+        content="Website Development Services, Web Design Services, SEO Services, Responsive Website Design, dexdeveloper, DexDeveloper">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="DexDeveloper">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dexdeveloper.vercel.app/">
+    <meta property="og:title" content="DexDeveloper | Help Business Scale">
+    <meta property="og:description"
+        content="DexDeveloper builds fast, responsive websites with modern design and SEO to help businesses grow traffic, rankings, and online visibility.">
+    <meta property="og:image" content="https://dexdeveloper.com/images/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dexdeveloper.vercel.app/">
+    <meta property="twitter:title" content="DexDeveloper | Help Businesses Scale">
+    <meta property="twitter:description" content="Transforming businesses through modern tech and strategic design.">
+    <meta property="twitter:image" content="https://dexdeveloper.vercel.app/images/og-image.jpg">
+    <link rel="preload" href="main.css" as="style">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body class="bg-gray-50 font-sans leading-normal tracking-normal">
+    <header>
+        <nav class="flex items-center justify-between px-6 py-5 bg-white shadow-sm sticky top-0 z-50">
+            <div class="text-2xl font-bold text-blue-600">Dex<span class="text-gray-800">Developer</span></div>
+
+            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="index.html" class="text-blue-600 underline underline-offset-8" aria-label="Home">Home</a>
+                <a href="#services" class="hover:text-blue-600 transition" aria-label="Services">Services</a>
+                <a href="about-us.html" class="hover:text-blue-600 transition" aria-level="About">About</a>
+                <a href="consultation-form.html" class="hover:text-blue-600 transition" aria-label="contact">Contact</a>
+            </div>
+
+
+            <a href="consultation-form.html" aria-label="get started" class="hidden md:flex">
+                <div class="hidden md:block">
+                    <button
+                        class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-gray-900 transition-all">
+                        Get Started
+                    </button>
+                </div>
+            </a>
+
+
+            <div id="menu-btn" class="md:hidden text-3xl cursor-pointer p-2">☰</div>
+        </nav>
+
+        <div id="overlay" class="fixed inset-0 bg-black/50 z-[60] hidden opacity-0 transition-opacity duration-300">
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-[75%] max-w-[300px] bg-white z-[70] shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col p-8">
+
+            <div id="close-btn" class="text-3xl self-end cursor-pointer mb-10 text-gray-400 hover:text-black">×</div>
+
+            <div class="flex flex-col space-y-6 text-lg font-bold">
+                <a href="index.html" class="text-blue-600 border-b border-gray-50 pb-2" aria-label="Home">Home</a>
+                <a href="#services" class="hover:text-blue-600 border-b border-gray-50 pb-2 transition-all"
+                    aria-label="Services">Services</a>
+                <a href="about-us.html" class="hover:text-blue-600 border-b border-gray-50 pb-2 transition-all"
+                    aria-label="About">About</a>
+                <a href="consultation-form.html" class="hover:text-blue-600 border-b border-gray-50 pb-2 transition-all"
+                    aria-label="Contact">Contact</a>
+
+                <!-- <a href="see-plans.html" aria-label="Get started"
+                    class="mt-4 bg-blue-600 text-white text-center py-4 rounded-2xl shadow-lg shadow-blue-100">
+                    Get Started
+                </a> -->
+            </div>
+
+            <!-- <div class="mt-auto pt-10 border-t border-gray-100">
+                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest text-center">DexDeveloper Studio
+                </p>
+            </div> -->
+        </div>
+
+    </header>
+    <main>
+        <section class="relative bg-white pt-16 pb-20 lg:pt-24 lg:pb-32 px-6">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
+
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                        <span class="text-blue-600">Take</span> your Business online and <span
+                            class="text-blue-600">grow
+                            it.</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-gray-600">
+                        We help startups become dominant in the digital world with modern websites and data-driven
+                        marketing. Your vision, our expertise.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="consultation-form.html" aria-label="Book a free consultation button">
+                            <button
+                                class="px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-bold hover:shadow-lg hover:bg-gray-900 transition-all">
+                                Book a free consultation
+                            </button>
+                        </a>
+                        <a href="work.html" aria-label="Look at our work button">
+                            <button
+                                class="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg text-lg font-bold hover:bg-blue-50 transition-all">
+                                Look at our work
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
+                    <div
+                        class="w-full max-w-md h-64 md:h-80 bg-blue-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-blue-300 overflow-hidden">
+                        <img src="images/dexdev.webp" fetchpriority="high" class="w-full h-full object-cover"
+                            alt="dexdeveloper hero section image"></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="how-we-work" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900">How <span class="text-blue-600">do
+                            we work</span></h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
+                        From idea to execution, our process is transparent and results-oriented.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-search-code">
+                                <path d="m13 13.5 2-2.5-2-2.5" />
+                                <path d="m21 21-4.3-4.3" />
+                                <path d="M9 8.5 7 11l2 2.5" />
+                                <circle cx="11" cy="11" r="8" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Understanding the Business</h3>
+                        <p class="text-gray-600">We start by deeply understanding your business, goals, target audience,
+                            and current challenges. This helps us identify what’s stopping your growth and where real
+                            opportunities exist.</p>
+                        <div
+                            class="absolute -bottom-2 -right-2 text-6xl font-bold text-blue-50 opacity-10 group-hover:text-blue-100 transition-colors">
+                            01</div>
+                    </div>
+
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-compass">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Strategy & Planning</h3>
+                        <p class="text-gray-600">Based on our research, we create a clear digital strategy and action
+                            plan. From website structure to marketing approach, every step is planned with growth and
+                            conversions in mind.</p>
+                        <div
+                            class="absolute -bottom-2 -right-2 text-6xl font-bold text-blue-50 opacity-10 group-hover:text-blue-100 transition-colors">
+                            02</div>
+                    </div>
+
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-rocket">
+                                <path
+                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.71.79-1.5.79-1.5h1.5l1.5-1.5h1.5l1.5-1.5v-1.5l1.5-1.5h1.5l1.5-1.5V11l1.5-1.5c1.26-1.5 5-2 5-2s-.5 3.74-2 5c-.71.71-1.5.79-1.5.79v1.5l-1.5 1.5v1.5l-1.5 1.5h-1.5l-1.5 1.5h-1.5l-1.5 1.5c-.71.71-1.5.79-1.5.79z" />
+                                <path d="m12 15 3 3" />
+                                <path d="m15 12 3 3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Build, Promote & Execute</h3>
+                        <p class="text-gray-600">We design and build high-performance digital assets like websites,
+                            landing pages, and campaigns. Along with development, we focus on digital marketing, SEO,
+                            and promotion.</p>
+                        <div
+                            class="absolute -bottom-2 -right-2 text-6xl font-bold text-blue-50 opacity-10 group-hover:text-blue-100 transition-colors">
+                            03</div>
+                    </div>
+
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trending-up">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                <polyline points="16 7 22 7 22 13" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Optimize, Scale & Support</h3>
+                        <p class="text-gray-600">After launch, we track performance, optimize continuously, and scale
+                            what works. Our support doesn’t stop at delivery — we work with you to grow your business
+                            long-term.</p>
+                        <div
+                            class="absolute -bottom-2 -right-2 text-6xl font-bold text-blue-50 opacity-10 group-hover:text-blue-100 transition-colors">
+                            04</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900">What do we do <br><span
+                            class="text-blue-600">and what do you get?</span></h2>
+                    <p class="mt-4 text-gray-600 max-w-xl text-lg">
+                        Not just services, we deliver results that improve your business's bottom line.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                    <div
+                        class="border border-gray-100 p-8 rounded-3xl bg-gray-50 hover:bg-blue-600 hover:text-white transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white/20">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 group-hover:text-white"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Website & App Dev</h3>
+                        <p class="text-gray-600 group-hover:text-blue-50 mb-6">We build high-speed, mobile-responsive
+                            websites that convert visitors into customers.</p>
+                        <ul class="space-y-2 text-sm font-medium">
+                            <li class="flex items-center">✅ 100% Responsive Design</li>
+                            <li class="flex items-center">✅ Lightning Fast Loading</li>
+                        </ul>
+                        <div class="mt-8 pt-6 border-t border-gray-200 group-hover:border-white/20">
+                            <span class="text-sm font-bold uppercase tracking-wider">Outcome:</span>
+                            <p class="text-lg font-semibold italic">"Strong Digital Presence & Trust"</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border border-gray-100 p-8 rounded-3xl bg-gray-50 hover:bg-blue-600 hover:text-white transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white/20">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 group-hover:text-white"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Business Growth</h3>
+                        <p class="text-gray-600 group-hover:text-blue-50 mb-6">Using data and analytics, we design
+                            growth
+                            loops for your business.</p>
+                        <ul class="space-y-2 text-sm font-medium">
+                            <li class="flex items-center">✅ Lead Generation Funnels</li>
+                            <li class="flex items-center">✅ Conversion Rate Optimization</li>
+                        </ul>
+                        <div class="mt-8 pt-6 border-t border-gray-200 group-hover:border-white/20">
+                            <span class="text-sm font-bold uppercase tracking-wider">Outcome:</span>
+                            <p class="text-lg font-semibold italic">"More Sales & Scalability"</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border border-gray-100 p-8 rounded-3xl bg-gray-50 hover:bg-blue-600 hover:text-white transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white/20">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 group-hover:text-white"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.167M12 13h7a2 2 0 002-2V9a2 2 0 00-2-2h-7m-9 5a3 3 0 013-3m0 6V7" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Full-Stack Marketing</h3>
+                        <p class="text-gray-600 group-hover:text-blue-50 mb-6">We help you communicate your brand voice
+                            to
+                            the right people through SEO, Social Media, and Paid Ads.</p>
+                        <ul class="space-y-2 text-sm font-medium">
+                            <li class="flex items-center">✅ Top Google Ranking (SEO)</li>
+                            <li class="flex items-center">✅ High ROI Ad Campaigns</li>
+                        </ul>
+                        <div class="mt-8 pt-6 border-t border-gray-200 group-hover:border-white/20">
+                            <span class="text-sm font-bold uppercase tracking-wider">Outcome:</span>
+                            <p class="text-lg font-semibold italic">"Brand Awareness & Consistency"</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="why-dexdeveloper" class="py-20 bg-gray-900 text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-5xl font-bold leading-tight">
+                            Why
+                            <span class="text-blue-500">DexDeveloper</span> is for your success ?
+                        </h2>
+                        <p class="mt-6 text-gray-200 text-lg">
+                            We're not just a service provider, we're your business partner. We won't stop until your
+                            business dominates the digital world.
+                        </p>
+
+                        <div class="mt-10 space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="mt-1 bg-blue-500/20 p-2 rounded-lg">
+                                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold">Results-First Approach</h4>
+                                    <p class="text-gray-200">We don't create fancy designs, we create websites and
+                                        campaigns
+                                        that convert.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="mt-1 bg-blue-500/20 p-2 rounded-lg">
+                                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold">Cutting Edge Tech</h4>
+                                    <p class="text-gray-200">We use the latest 2025 tech stack to keep your site always
+                                        fast
+                                        and secure.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="mt-1 bg-blue-500/20 p-2 rounded-lg">
+                                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold">100% Transparency</h4>
+                                    <p class="text-gray-200">From reporting to pricing, nothing is hidden. You'll know
+                                        where
+                                        every penny of your money is going.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/2 w-full grid grid-cols-2 gap-4">
+                        <div class="bg-gray-800 p-8 rounded-3xl text-center border border-gray-700">
+                            <div class="text-4xl font-extrabold text-blue-400 mb-2">99%</div>
+                            <p class="text-sm text-gray-200 uppercase tracking-widest">Client Satisfaction</p>
+                        </div>
+                        <div class="bg-blue-700 p-8 rounded-3xl text-center shadow-xl shadow-blue-500/20">
+                            <div class="text-4xl font-extrabold text-gray-100 mb-2">24/7</div>
+                            <p class="text-sm uppercase text-gray-200 font-bold tracking-widest">Expert Support</p>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-3xl text-center border border-gray-700">
+                            <div class="text-4xl font-extrabold text-blue-400 mb-2">ROI</div>
+                            <p class="text-sm text-gray-200 uppercase tracking-widest">Driven Marketing</p>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-3xl text-center border border-gray-700">
+                            <div class="text-4xl font-extrabold text-blue-400 mb-2">Fast</div>
+                            <p class="text-sm text-gray-200 uppercase tracking-widest">Delivery Time</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="founder" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="bg-blue-50 rounded-3xl p-8 md:p-16 flex flex-col lg:flex-row items-center gap-12">
+
+                    <div
+                        class="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 bg-blue-200">
+                        <img src="images/founder-image.webp" alt="DexDeveloper Founder" width="321" height="288"
+                            class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="lg:w-2/3 text-center lg:text-left">
+                        <span
+                            class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">The
+                            Mind Behind DexDeveloper</span>
+                        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mt-4">Hi, I'm Krishna</h2>
+
+                        <p class="mt-6 text-gray-700 text-lg leading-relaxed">
+                            I started <strong>DexDeveloper</strong> because I saw that many brilliant ideas fail simply
+                            because they didn't have the right digital strategy.
+                        </p>
+
+                        <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+                            My mission is simple: to give startups and local businesses the tools and technology that
+                            big
+                            brands use. When you work with me, you're not talking to a sales agent, you're talking to a
+                            <strong>Solution Architect.</strong>
+                        </p>
+
+                        <div class="mt-8 flex flex-col sm:flex-row items-center gap-6">
+                            <a href="https://www.linkedin.com/in/krishna-sharma-23810b333/" target="_blank"
+                                aria-label="Connect on linkedin button"
+                                class="flex items-center gap-2 text-blue-600 font-bold hover:underline">
+                                <span>Connect on LinkedIn</span>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                            <div class="hidden sm:block h-8 w-[1px] bg-gray-300"></div>
+                            <p class="text-gray-700 italic text-sm">"Technology is useful only when it brings results."
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- cta sectin part -->
+        <section id="cta" class="py-20 bg-blue-600">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+
+                    <div class="lg:w-1/2 p-10 md:p-16 bg-gray-50 flex flex-col justify-center border-r border-gray-100">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                            Start Your <span class="text-blue-600">Digital Growth</span> Journey
+                        </h2>
+
+                        <p class="mt-6 text-gray-600 text-lg">
+                            Your idea is great, it just needs the right digital direction. Connect today and see how we
+                            can
+                            transform your business.
+                        </p>
+
+                        <div class="mt-10 space-y-4">
+                            <div class="flex items-center gap-4 text-gray-800 font-semibold">
+                                <span class="bg-green-100 text-green-600 p-2 rounded-full font-bold">✓</span>
+                                Free 30-Minute Consultation
+                            </div>
+                            <div class="flex items-center gap-4 text-gray-800 font-semibold">
+                                <span class="bg-green-100 text-green-600 p-2 rounded-full font-bold">✓</span>
+                                Custom Growth Roadmap
+                            </div>
+                            <div class="flex items-center gap-4 text-gray-800 font-semibold">
+                                <span class="bg-green-100 text-green-600 p-2 rounded-full font-bold">✓</span>
+                                No Hidden Charges
+                            </div>
+                        </div>
+
+                        <div class="mt-12 pt-8 border-t border-gray-200">
+                            <p class="text-sm text-gray-500 uppercase tracking-widest font-bold">Direct Reach</p>
+                            <p class="text-2xl font-bold text-blue-600 mt-2">dexit1725@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/2 p-8 md:p-12 bg-white flex flex-col gap-6">
+                        <div class="w-full h-full min-h-[300px] overflow-hidden rounded-[2rem] shadow-inner">
+                            <img src="images/og-image.png" alt="Consultation Meeting"
+                                class="w-full h-full object-cover">
+                        </div>
+
+                        <a href="consultation-form.html" aria-label="Book Free Consultation button"
+                            class="w-full  p-4 bg-blue-600 text-white text-center text-xl font-black rounded-2xl shadow-xl shadow-blue-100 hover:bg-gray-900 transition-all transform hover:-translate-y-1 active:scale-95 flex justify-center items-center gap-4">
+                            Book Free Consultation
+                        </a>
+
+                        <p class="text-center text-gray-700 text-sm font-medium">
+                            ⚡ Guaranteed response within 2 business hours
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+                <div class="col-span-1 lg:col-span-1">
+                    <div class="text-2xl font-bold text-white mb-6">
+                        <span class="text-blue-500">Dex</span>Developer
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Helping startups and businesses transition from traditional to digital-first growth. Your
+                        partner in modern engineering and marketing.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/dexdeveloper-b881a83a2/"
+                            aria-label="DexDeveloper linkedin account"
+                            class="w-10 h-10 rounded-full flex items-center justify-center bg-blue-600 transition-all hover:scale-110">
+                            <img src="images/linkedin-icon.png" alt="linkedin-icon" width="20" height="20"
+                                class="w-5 h-5 object-contain invert brightness-0">
+                        </a>
+
+                        <a href="https://x.com/dexdevelopers" aria-label="DexDeveloper twitter account"
+                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-sm border border-gray-100">
+                            <img src="images/twitter-x-logo.png" alt="twitter-x-logo" width="20" height="20"
+                                class="w-5 h-auto max-h-5 object-contain">
+                        </a>
+
+                        <a href="https://www.instagram.com/dexdeveloper_/" aria-label="DexDeveloper instagram account"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center transition-all hover:scale-110">
+                            <img src="images/instagram.png" alt="instagram icon" width="20" height="20"
+                                class="w-5 h-5 object-contain">
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-gray-200 font-bold mb-6 uppercase tracking-wider text-sm">Company</h4>
+                    <ul class="space-y-4">
+                        <li><a href="about-us.html" class="hover:text-blue-400 transition" aria-label="About us">About
+                                Us</a></li>
+                        <li><a href="index.html#services" class="hover:text-blue-400 transition"
+                                aria-label="services">Services</a></li>
+                        <li><a href="index.html#how-we-work" class="hover:text-blue-400 transition"
+                                aria-label="our process">Our Process</a></li>
+                        <li><a href="index.html#founder" class="hover:text-blue-400 transition"
+                                aria-label="founder story">Founder's Story</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-gray-200 font-bold mb-6 uppercase tracking-wider text-sm">Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#services" class="hover:text-blue-400 transition" aria-label="web development">Web
+                                Development</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition"
+                                aria-label="growth strategy">Growth Strategy</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition"
+                                aria-label="SEO Omptimization">SEO Optimization</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition"
+                                aria-label="digital marketing">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-gray-200 font-bold mb-6 uppercase tracking-wider text-sm">Stay Updated</h4>
+                    <p class="text-sm text-gray-200 mb-4">Subscribe to get weekly digital growth tips.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Address"
+                            class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-blue-500">
+                        <button class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700 transition">🚀</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-200">
+                    © 2025 DexDeveloper. All rights reserved. Made for growth.
+                </p>
+                <div class="flex space-x-6 text-xs text-gray-200">
+                    <a href="privacy-policy.html" class="hover:text-white" aria-label="privacy policy">Privacy
+                        Policy</a>
+                    <a href="terms.html" class="hover:text-white" aria-label="terms of services">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

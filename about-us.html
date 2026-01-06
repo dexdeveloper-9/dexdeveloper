@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | DexDeveloper</title>
+    <meta name="title" content="About DexDeveloper | Building High-Performance Web Experiences">
+    <meta name="description"
+        content="Learn about DexDeveloper, a next-gen tech agency specializing in blazing-fast websites, custom SEO strategies, and high-converting digital solutions for modern brands.">
+    <meta name="keywords"
+        content="DexDeveloper, about dexdeveloper, web development agency, fast tech growth, SEO experts, custom website building">
+    <meta name="author" content="DexDeveloper">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #1f2937;
+        }
+
+        .premium-card {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .premium-card:hover {
+            border-color: #4f46e5;
+            background: #ffffff;
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #4f46e5, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="selection:bg-indigo-100 font-sans">
+    <header>
+        <nav class="flex items-center justify-between px-6 py-5 bg-white shadow-sm sticky top-0 z-50">
+            <div class="text-2xl font-bold text-blue-600">Dex<span class="text-gray-800">Developer</span></div>
+
+            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-blue-600 transition" aria-label="Home">Home</a>
+                <a href="index.html#services" class="hover:text-blue-600 transition" aria-label="Services">Services</a>
+                <a href="about-us.html" class="text-blue-600 transition underline underline-offset-8" aria-level="About">About</a>
+                <a href="consultation-form.html" class="hover:text-blue-600 transition" aria-label="contact">Contact</a>
+            </div>
+
+
+            <a href="consultation-form.html" aria-label="get started" class="hidden md:flex">
+                <div class="hidden md:block">
+                    <button
+                        class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-gray-900 transition-all">
+                        Get Started
+                    </button>
+                </div>
+            </a>
+
+
+            <div id="menu-btn" class="md:hidden text-3xl cursor-pointer p-2">☰</div>
+        </nav>
+
+        <div id="overlay" class="fixed inset-0 bg-black/50 z-[60] hidden opacity-0 transition-opacity duration-300">
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-[75%] max-w-[300px] bg-white z-[70] shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col p-8">
+
+            <div id="close-btn" class="text-3xl self-end cursor-pointer mb-10 text-gray-400 hover:text-black">×</div>
+
+            <div class="flex flex-col space-y-6 text-lg font-bold">
+                <a href="index.html" class="text-blue-600 border-b border-gray-50 pb-2" aria-label="Home">Home</a>
+                <a href="#services" class="hover:text-blue-600 border-b border-gray-50 pb-2 transition-all"
+                    aria-label="Services">Services</a>
+                <a href="about-us.html" class="hover:text-blue-600 border-b border-gray-50 pb-2 transition-all"
+                    aria-label="About">About</a>
+                <a href="consultation-form.html" class="hover:text-blue-600 border-b border-gray-50 pb-2 transition-all"
+                    aria-label="Contact">Contact</a>
+
+                <!-- <a href="see-plans.html" aria-label="Get started"
+                    class="mt-4 bg-blue-600 text-white text-center py-4 rounded-2xl shadow-lg shadow-blue-100">
+                    Get Started
+                </a> -->
+            </div>
+    </header>
+
+    <main>
+        <section class="pt-10 px-6 bg-gray-50/50">
+            <div class="max-w-5xl mx-auto text-center">
+                <span class="text-blue-600 font-bold tracking-widest uppercase text-xs mb-4 block">The Agency
+                    Story</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 leading-[1.1] mb-8">
+                    We turn businesses into
+                    <br><span class="text-gradient">Digital Brands</span>
+                </h1>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600 leading-relaxed">
+                    DexDeveloper started with a simple mission: to give businesses the technology that would
+                    actually
+                    help
+                    them grow, not just create a pretty "showpiece" website.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-20 px-6 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-5 rounded-[2rem] overflow-hidden shadow-2xl relative group">
+                    <img src="images/founder-image.webp" alt="Founder"
+                        class="w-full h-[550px] object-cover transition duration-700 group-hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 p-10 bg-gradient-to-t from-black/80 to-transparent">
+                        <p class="text-white text-3xl font-extrabold">Krishna</p>
+                        <p class="text-indigo-300 font-medium tracking-widest uppercase text-sm">Founder & Developer
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-10">
+                    <div>
+                        <h2 class="text-4xl font-extrabold text-gray-900 mb-6">"Growth doesn't come from generic
+                            work."
+                        </h2>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            Everyone's building a website these days, but very few understand the right balance
+                            between
+                            engineering and marketing. We bridge that gap.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="premium-card p-8 rounded-3xl">
+                            <div
+                                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 font-bold mb-4">
+                                01</div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Quality Over Quantity</h4>
+                            <p class="text-sm text-gray-500">We take on only a few projects in a month so that each
+                                one
+                                gets
+                                100% attention.</p>
+                        </div>
+                        <div class="premium-card p-8 rounded-3xl">
+                            <div
+                                class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center text-cyan-800 font-bold mb-4">
+                                02</div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Result Focused</h4>
+                            <p class="text-sm text-gray-500">Our focus is not just on code, but on your sales and
+                                lead
+                                generation.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-gray-100">
+                        <p class="text-gray-900 font-bold italic text-lg">"Your vision and our expertise—a perfect
+                            growth
+                            engine."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-blue-600 font-sans">
+            <div class="max-w-5xl mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-8 leading-tight">
+                    Ready to scale your <span class="opacity-70">digital presence?</span>
+                </h2>
+                <p class="text-gray-100 text-lg mb-10 max-w-2xl mx-auto">
+                    Now that you know about us, it's time for us to analyze your business and create a winning
+                    strategy.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="consultation-form.html" aria-label="book free consultation">
+                        <button
+                            class="px-8 py-4 bg-white text-black rounded-lg text-lg font-bold  hover:text-white hover:shadow-lg hover:bg-gray-900 transition-all">
+                            Book free consultation
+                        </button>
+                    </a>
+                    <a href="work.html" aria-label="Look at our work">
+                        <button
+                            class="px-8 py-4 border-2 border-white-600 text-white rounded-lg text-lg font-bold  hover:bg-gray-900 transition-all">
+                            Look at our work
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+                <div class="col-span-1 lg:col-span-1">
+                    <div class="text-2xl font-bold text-white mb-6">
+                        <span class="text-blue-500">Dex</span>Developer
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Helping startups and businesses transition from traditional to digital-first growth. Your
+                        partner in modern engineering and marketing.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/dexdeveloper-b881a83a2/"
+                            aria-label="DexDeveloper linkedin account"
+                            class="w-10 h-10 rounded-full flex items-center justify-center bg-blue-600 transition-all hover:scale-110">
+                            <img src="images/linkedin-icon.png" alt="linkedin-icon" width="20" height="20"
+                                class="w-5 h-5 object-contain invert brightness-0">
+                        </a>
+
+                        <a href="https://x.com/dexdevelopers" aria-label="DexDeveloper twitter account"
+                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-sm border border-gray-100">
+                            <img src="images/twitter-x-logo.png" alt="twitter-x-logo" width="20" height="20"
+                                class="w-5 h-auto max-h-5 object-contain">
+                        </a>
+
+                        <a href="https://www.instagram.com/dexdeveloper_/" aria-label="DexDeveloper instagram account"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center transition-all hover:scale-110">
+                            <img src="images/instagram.png" alt="instagram icon" width="20" height="20"
+                                class="w-5 h-5 object-contain">
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-gray-200 font-bold mb-6 uppercase tracking-wider text-sm">Company</h4>
+                    <ul class="space-y-4">
+                        <li><a href="about-us.html" class="hover:text-blue-400 transition" aria-label="About us">About
+                                Us</a></li>
+                        <li><a href="index.html#services" class="hover:text-blue-400 transition"
+                                aria-label="services">Services</a></li>
+                        <li><a href="index.html#how-we-work" class="hover:text-blue-400 transition"
+                                aria-label="our process">Our Process</a></li>
+                        <li><a href="index.html#founder" class="hover:text-blue-400 transition"
+                                aria-label="founder story">Founder's Story</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-gray-200 font-bold mb-6 uppercase tracking-wider text-sm">Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#services" class="hover:text-blue-400 transition" aria-label="web development">Web
+                                Development</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition"
+                                aria-label="growth strategy">Growth Strategy</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition"
+                                aria-label="SEO Omptimization">SEO Optimization</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition"
+                                aria-label="digital marketing">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-gray-200 font-bold mb-6 uppercase tracking-wider text-sm">Stay Updated</h4>
+                    <p class="text-sm text-gray-200 mb-4">Subscribe to get weekly digital growth tips.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Address"
+                            class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-blue-500">
+                        <button class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700 transition">🚀</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-200">
+                    © 2025 DexDeveloper. All rights reserved. Made for growth.
+                </p>
+                <div class="flex space-x-6 text-xs text-gray-200">
+                    <a href="privacy-policy.html" class="hover:text-white" aria-label="privacy policy">Privacy
+                        Policy</a>
+                    <a href="terms.html" class="hover:text-white" aria-label="terms of services">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

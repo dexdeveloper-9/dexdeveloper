@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Free Strategy Call | DexDeveloper</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: white;
+            font-weight: 500;
+        }
+
+        .form-input {
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            border-color: #2563eb;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+        }
+
+        .animate-fade {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Success Overlay Styling */
+        #successMessage {
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50/50 selection:bg-blue-100 font-sans">
+
+    <div id="successMessage" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-6 bg-white/90 text-gray-800">
+        <div
+            class="max-w-md w-full bg-white p-10 rounded-[3rem] shadow-2xl text-center border border-gray-100 animate-fade">
+            <div
+                class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
+                ✓</div>
+            <h2 class="text-3xl font-black mb-4">Awesome!</h2>
+            <p class="mb-8 leading-relaxed">We've received your details. Our strategy team will audit your
+                requirements and contact you within 24 hours.</p>
+            <a href="index.html"
+                class="inline-block w-full py-4 bg-blue-700 font-bold rounded-2xl hover:bg-gray-900 transition-all text-white">Back
+                to Home</a>
+        </div>
+    </div>
+
+    <nav class="py-6 px-8 bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <div class="text-2xl font-bold text-blue-600">Dex<span class="text-gray-800">Developer</span></div>
+            </a>
+            <a href="index.html"
+                class="group flex items-center gap-2 text-sm font-bold text-gray-800 hover:text-blue-600 transition-all uppercase tracking-widest">
+                <span class="group-hover:-translate-x-1 text-gray-800 transition-transform">←</span> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <main class="py-12 md:py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div
+                class="bg-white rounded-[3.5rem] shadow-2xl shadow-gray-200/50 border border-gray-100 overflow-hidden grid grid-cols-1 lg:grid-cols-5 min-h-[700px]">
+
+                <div id="sidebarContent"
+                    class="lg:col-span-2 bg-blue-700 p-12 md:p-16 flex flex-col justify-between transition-colors duration-700">
+                    <div class="animate-fade">
+                        <span
+                            class="inline-block px-3 py-1 bg-white/10 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-8">Strategy
+                            Session</span>
+
+                        <h1 id="dynamicHeading" class="text-4xl md:text-5xl font-black leading-[1.1] mb-6">
+                            Let's Build Your <br> First Empire.
+                        </h1>
+
+                        <p id="dynamicSubtext" class="text-lg mb-12 leading-relaxed opacity-90">
+                            You're just one step away from launching your digital identity. We'll help you build a
+                            website that turns strangers into customers.
+                        </p>
+
+                        <div id="dynamicSteps" class="space-y-8">
+                            <div class="flex items-center gap-5">
+                                <div
+                                    class="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center text-sm font-bold border border-white/10">
+                                    1</div>
+                                <span id="step1" class="font-semibold">Niche & Competitor Research</span>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <div
+                                    class="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center text-sm font-bold border border-white/10">
+                                    2</div>
+                                <span id="step2" class="font-semibold">Custom UI/UX Blueprint</span>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <div
+                                    class="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center text-sm font-bold border border-white/10">
+                                    3</div>
+                                <span id="step3" class="font-semibold">Launch & Growth Roadmap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-16 pt-8 border-t border-white/10">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                            <p class="text-xs text-blue-200 font-bold uppercase tracking-widest">Available for new
+                                projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 p-12 md:p-16 bg-white">
+                    <form id="consultationForm" name="google-sheet" class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <label
+                                    class="block text-[10px] font-black uppercase text-gray-500 mb-3 tracking-[0.2em]">Full
+                                    Name</label>
+                                <input type="text" name="full_name" required placeholder="John Doe"
+                                    class="form-input w-full px-6 py-5 bg-gray-50 border border-gray-100 rounded-2xl outline-none text-gray-900 font-medium">
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-[10px] font-black uppercase text-gray-500 mb-3 tracking-[0.2em]">Mobile
+                                    Number</label>
+                                <input type="tel" name="phone_number" required placeholder="+91 00000 00000"
+                                    class="form-input w-full px-6 py-5 bg-gray-50 border border-gray-100 rounded-2xl outline-none text-gray-900 font-medium">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label
+                                class="block text-[10px] font-black uppercase text-gray-500 mb-3 tracking-[0.2em]">Email
+                                Address</label>
+                            <input type="email" name="email" required placeholder="john@company.com"
+                                class="form-input w-full px-6 py-5 bg-gray-50 border border-gray-100 rounded-2xl outline-none text-gray-900 font-medium">
+                        </div>
+
+                        <div>
+                            <label
+                                class="block text-[10px] font-black uppercase text-gray-500 mb-4 tracking-[0.2em]">Already
+                                have a website?</label>
+                            <div class="flex gap-4 p-1.5 bg-gray-50 rounded-[1.5rem] border border-gray-100">
+                                <label class="flex-1 cursor-pointer">
+                                    <input type="radio" name="website_exists" value="Yes" class="hidden peer"
+                                        onchange="updateSidebar(true)">
+                                    <div
+                                        class="py-4 rounded-2xl text-center font-bold text-gray-500 peer-checked:bg-white peer-checked:text-blue-600 peer-checked:shadow-sm transition-all duration-300">
+                                        Yes, I do</div>
+                                </label>
+                                <label class="flex-1 cursor-pointer">
+                                    <input type="radio" name="website_exists" value="No" class="hidden peer"
+                                        onchange="updateSidebar(false)" checked>
+                                    <div
+                                        class="py-4 rounded-2xl text-center font-bold text-gray-500 peer-checked:bg-white peer-checked:text-blue-600 peer-checked:shadow-sm transition-all duration-300">
+                                        No, Not yet</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="webUrlBox" class="hidden animate-fade">
+                            <label
+                                class="block text-[10px] font-black uppercase text-gray-500 mb-3 tracking-[0.2em]">Your
+                                Current Website URL</label>
+                            <input type="url" name="website_url" placeholder="https://www.yourbrand.com"
+                                class="form-input w-full px-6 py-5 bg-gray-50 border border-gray-100 rounded-2xl outline-none text-gray-900 font-medium border-blue-100">
+                        </div>
+
+                        <div class="pt-6">
+                            <button type="submit" id="submitBtn"
+                                class="w-full py-6 bg-blue-700 font-black rounded-2xl shadow-xl shadow-blue-100 hover:bg-gray-900 transition-all duration-300 transform active:scale-[0.98] text-lg">
+                                Secure My Free Session →
+                            </button>
+                            <p
+                                class="text-center text-[11px] text-gray-500 mt-6 tracking-wide uppercase font-bold italic">
+                                🔒 Your information is confidential & secure.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 text-center text-gray-500 text-[10px] font-bold tracking-[0.3em] uppercase">
+        © 2026 DexDeveloper / Strategic Consulting Division
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
